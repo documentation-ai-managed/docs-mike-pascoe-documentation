@@ -1,0 +1,99 @@
+---
+title: Integrations
+description: Learn how to integrate Linktree with other platforms and tools
+---
+
+## Platform Integrations
+
+Linktree seamlessly connects with your favorite social media and business tools.
+
+<Columns cols={2}>
+  <Card title="Instagram" icon="instagram" href="#" horizontal>
+    Add Linktree to your Instagram bio for easy access.
+  </Card>
+  <Card title="Twitter" icon="twitter" href="#" horizontal>
+    Integrate with Twitter for automatic link sharing.
+  </Card>
+</Columns>
+
+## E-commerce Integration
+
+<Callout kind="info">Sell products directly from your Linktree page.</Callout>
+
+<Tabs>
+  <Tab title="Shopify" icon="shopping-cart">
+    Connect your Shopify store for instant product links.
+  </Tab>
+  <Tab title="Etsy" icon="package">
+    Showcase your Etsy shop items.
+  </Tab>
+</Tabs>
+
+## Email Marketing
+
+<Steps>
+  <Step title="Choose Provider" icon="mail">
+    Select from Mailchimp, ConvertKit, or other providers.
+  </Step>
+  <Step title="Configure" icon="settings">
+    Set up your email capture form.
+  </Step>
+  <Step title="Test" icon="check-circle">
+    Verify subscribers are added correctly.
+  </Step>
+</Steps>
+
+## API Integration
+
+For developers, Linktree offers a robust API.
+
+| Endpoint | Purpose |
+|----------|---------|
+| `/links` | Manage link data |
+| `/analytics` | Access metrics |
+| `/themes` | Customize appearance |
+
+<ExpandableGroup>
+  <Expandable title="Authentication" default-open="false">
+    Use OAuth 2.0 or API keys for secure access.
+  </Expandable>
+  <Expandable title="Webhooks" default-open="false">
+    Receive real-time notifications for link clicks.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="Node.js,Ruby">
+  ````javascript
+  const axios = require('axios');
+  
+  const response = await axios.get('https://api.linktree.com/v1/integrations', {
+    headers: { 'Authorization': `Bearer ${API_KEY}` }
+  });
+  console.log(response.data);
+  ````
+  ````ruby
+  require 'net/http'
+  require 'json'
+  
+  uri = URI('https://api.linktree.com/v1/integrations')
+  http = Net::HTTP.new(uri.host, uri.port)
+  request = Net::HTTP::Get.new(uri)
+  request['Authorization'] = "Bearer #{API_KEY}"
+  response = http.request(request)
+  puts JSON.parse(response.body)
+  ````
+</CodeGroup>
+
+## Third-party Tools
+
+<Callout kind="alert">Always verify integration compatibility.</Callout>
+
+Popular tools that work with Linktree:
+
+- Zapier for automation
+- Bitly for link shortening
+- Canva for custom graphics
+
+<Expandable title="Troubleshooting" default-open="false">
+  If an integration fails, check API keys and permissions.
+</Expandable>

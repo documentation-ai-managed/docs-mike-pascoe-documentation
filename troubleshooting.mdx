@@ -1,0 +1,85 @@
+---
+title: Troubleshooting
+description: Common issues and solutions for Linktree users
+---
+
+## Common Problems
+
+Find solutions to frequently encountered issues with Linktree.
+
+<ExpandableGroup>
+  <Expandable title="Links Not Working" default-open="false">
+    Ensure URLs start with `https://` and are correctly formatted.
+  </Expandable>
+  <Expandable title="Page Not Loading" default-open="false">
+    Clear browser cache or try a different device.
+  </Expandable>
+  <Expandable title="Changes Not Saving" default-open="false">
+    Check internet connection and try refreshing the page.
+  </Expandable>
+</ExpandableGroup>
+
+## Account Issues
+
+<Callout kind="danger">Contact support if you can't access your account.</Callout>
+
+<Steps>
+  <Step title="Reset Password" icon="key">
+    Use the forgot password link on the login page.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Ensure your email address is confirmed.
+  </Step>
+  <Step title="Check Account Status" icon="user-check">
+    Verify your account hasn't been suspended.
+  </Step>
+</Steps>
+
+## Technical Support
+
+<Columns cols={2}>
+  <Card title="Help Center" icon="help-circle" href="#" horizontal>
+    Browse our knowledge base for guides.
+  </Card>
+  <Card title="Contact Support" icon="message-circle" href="#" horizontal>
+    Reach out via email or chat.
+  </Card>
+</Columns>
+
+## API Troubleshooting
+
+For developers using the API:
+
+<Tabs>
+  <Tab title="Authentication" icon="lock">
+    Verify your API key is valid and has correct permissions.
+  </Tab>
+  <Tab title="Rate Limits" icon="clock">
+    Check if you've exceeded API request limits.
+  </Tab>
+</Tabs>
+
+| Error Code | Meaning | Solution |
+|------------|---------|----------|
+| 401 | Unauthorized | Check API key |
+| 429 | Rate limited | Wait and retry |
+| 500 | Server error | Contact support |
+
+<CodeGroup tabs="Bash,PowerShell">
+  ````bash
+  # Test API connectivity
+  curl -H "Authorization: Bearer YOUR_KEY" https://api.linktree.com/v1/status
+  ````
+  ````powershell
+  # Test API connectivity
+  Invoke-RestMethod -Uri 'https://api.linktree.com/v1/status' -Headers @{'Authorization' = 'Bearer YOUR_KEY'}
+  ````
+</CodeGroup>
+
+## Mobile App Issues
+
+<Expandable title="App Troubleshooting" default-open="false">
+  Update the app, restart your device, or reinstall if problems persist.
+</Expandable>
+
+<Callout kind="tip">Enable notifications for important updates.</Callout>

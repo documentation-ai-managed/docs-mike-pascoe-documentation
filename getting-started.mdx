@@ -1,0 +1,106 @@
+---
+title: Getting Started
+description: Step-by-step guide to setting up your Linktree account
+---
+
+## Creating Your Account
+
+Getting started with Linktree is simple. Follow these steps to create your first link page.
+
+<Steps>
+  <Step title="Sign Up" icon="user">
+    Visit linktree.com and click "Sign up for free." Enter your email and create a password.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email and click the link to activate your account.
+  </Step>
+  <Step title="Customize Profile" icon="settings">
+    Add your profile picture, bio, and display name.
+  </Step>
+  <Step title="Add Links" icon="plus">
+    Click "Add Link" to include your social media, website, and other important URLs.
+  </Step>
+</Steps>
+
+## Choosing a Theme
+
+<Callout kind="info">Your theme sets the visual tone for your Linktree page.</Callout>
+
+<Tabs>
+  <Tab title="Classic" icon="layout">
+    Clean and simple design with customizable colors.
+  </Tab>
+  <Tab title="Bold" icon="zap">
+    Eye-catching with gradients and animations.
+  </Tab>
+  <Tab title="Minimal" icon="minus">
+    Sleek and professional appearance.
+  </Tab>
+</Tabs>
+
+## Optimizing Your Links
+
+To maximize engagement, organize your links strategically:
+
+- Place your most important links first
+- Use descriptive titles
+- Add thumbnails for visual appeal
+- Test different arrangements
+
+<Columns cols={2}>
+  <Card title="Link Best Practices" icon="check-circle" href="#" horizontal>
+    Learn how to write effective link titles and descriptions.
+  </Card>
+  <Card title="Analytics Setup" icon="bar-chart" href="#" horizontal>
+    Enable tracking to see which links perform best.
+  </Card>
+</Columns>
+
+## Advanced Features
+
+<ExpandableGroup>
+  <Expandable title="Custom Domains" default-open="false">
+    Upgrade to PRO to use your own domain name.
+  </Expandable>
+  <Expandable title="Button Customization" default-open="false">
+    Change button styles, colors, and add icons.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="cURL,JavaScript">
+  ````bash
+  curl -X POST https://api.linktree.com/v1/accounts \
+    -H "Authorization: Bearer YOUR_TOKEN" \
+    -d '{"username":"yourname"}'
+  ````
+  ````javascript
+  fetch('https://api.linktree.com/v1/accounts', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer YOUR_TOKEN',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ username: 'yourname' })
+  });
+  ````
+</CodeGroup>
+
+## Troubleshooting Common Issues
+
+<Callout kind="alert">If links aren't working, check your URLs for typos.</Callout>
+
+Common problems and solutions:
+
+- **Links not clickable**: Ensure URLs start with `https://`
+- **Page not loading**: Clear your browser cache
+- **Changes not saving**: Check your internet connection
+
+## Next Steps
+
+Once your Linktree is set up, share it with your audience and monitor performance.
+
+<Expandable title="Pro Tips" default-open="false">
+  - Update your bio regularly
+  - Use UTM parameters for better tracking
+  - A/B test different link orders
+</Expandable>

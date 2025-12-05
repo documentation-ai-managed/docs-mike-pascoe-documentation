@@ -1,0 +1,102 @@
+---
+title: Features
+description: Explore the key features and capabilities of Linktree
+---
+
+## Core Features
+
+Linktree offers a comprehensive set of tools to enhance your online presence.
+
+<Columns cols={3}>
+  <Card title="Link Management" icon="link" href="#" cta="Learn More">
+    Organize and prioritize your links effectively.
+  </Card>
+  <Card title="Themes" icon="palette" href="#" cta="Browse Themes">
+    Choose from dozens of professional themes.
+  </Card>
+  <Card title="Analytics" icon="bar-chart" href="#" cta="View Reports">
+    Track clicks and engagement metrics.
+  </Card>
+</Columns>
+
+## Customization Options
+
+<Callout kind="tip">Premium features unlock advanced customization.</Callout>
+
+<Tabs>
+  <Tab title="Appearance" icon="eye">
+    Customize fonts, colors, and backgrounds.
+  </Tab>
+  <Tab title="Buttons" icon="square">
+    Style buttons with icons and animations.
+  </Tab>
+  <Tab title="Layout" icon="grid">
+    Arrange links in different grid formats.
+  </Tab>
+</Tabs>
+
+## Analytics and Insights
+
+<Steps>
+  <Step title="Enable Tracking" icon="settings">
+    Turn on analytics in your dashboard settings.
+  </Step>
+  <Step title="View Reports" icon="bar-chart">
+    Access click data and audience demographics.
+  </Step>
+  <Step title="Optimize" icon="trending-up">
+    Use insights to reorder links for better performance.
+  </Step>
+</Steps>
+
+## Integrations
+
+Linktree integrates with popular platforms and tools:
+
+| Platform | Feature |
+|----------|---------|
+| Instagram | Direct bio link |
+| Twitter | Profile integration |
+| Mailchimp | Email capture |
+| Shopify | Product links |
+
+<ExpandableGroup>
+  <Expandable title="Social Media" default-open="false">
+    Connect all your social accounts for seamless sharing.
+  </Expandable>
+  <Expandable title="E-commerce" default-open="false">
+    Link to products and accept payments directly.
+  </Expandable>
+</ExpandableGroup>
+
+<CodeGroup tabs="Python,PHP">
+  ````python
+  import linktree_api
+  
+  client = linktree_api.Client('YOUR_API_KEY')
+  features = client.get_features()
+  print(features)
+  ````
+  ````php
+  <?php
+  $client = new LinktreeAPI('YOUR_API_KEY');
+  $features = $client->getFeatures();
+  echo json_encode($features);
+  ?>
+  ````
+</CodeGroup>
+
+## Pro Features
+
+<Callout kind="success">Upgrade to PRO for premium capabilities.</Callout>
+
+- Custom domains
+- Priority support
+- Advanced analytics
+- Remove Linktree branding
+
+## Mobile Experience
+
+<Expandable title="Mobile Optimization" default-open="false">
+  Your Linktree page is fully responsive and optimized for mobile devices.
+</Expandable>
